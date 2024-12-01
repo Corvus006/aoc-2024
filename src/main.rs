@@ -184,15 +184,7 @@ fn main() {
     // Generate the file path
     let path = format!("data/{:02}/{:02}/data.txt", day_num, task_num);
 
-
-    // Print where the program is searching for data
-    println!("Searching for data at: {}", path);
-
-    // Try to read the data from the generated path
-    let data = fs::read_to_string(&path)
-        .expect(&format!("data missing for day {day_num} task {task_num}"));
-
     // Call the corresponding function and print the result
-    let result = day_fn(day_num, task_num)(data);
+    let result = day_fn(day_num, task_num)(path);
     println!("result: {result}");
 }
