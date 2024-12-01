@@ -182,7 +182,7 @@ fn main() {
     let task_num = task.parse::<i32>().expect("failed to parse task");
 
     // Generate the file path
-    let path = format!("/data/{:02}/{:02}/data.txt", day_num, task_num);
+    let path = format!("data/{:02}/{:02}/data.txt", day_num, task_num);
 
 
     // Print where the program is searching for data
