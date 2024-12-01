@@ -1,6 +1,4 @@
-use std::fs;
 use std::io::{stdin, stdout, Write};
-use std::path::Path;
 
 mod day_01;
 mod day_02;

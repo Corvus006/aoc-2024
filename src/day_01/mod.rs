@@ -1,6 +1,5 @@
 use std::{fs, io};
 use std::io::BufRead;
-use std::path::Path;
 
 pub mod task1;
 pub mod task2;
@@ -12,17 +11,8 @@ struct Lists {
 
 fn read_file(file_path: String) -> io::Result<Lists> {
     // Open the file
-    println!("1");
-    let path_obj = Path::new(&file_path);
-    if path_obj.exists() {
-        println!("Path exists.");
-    } else {
-        println!("Path does not exist.");
-    }
     let file = fs::File::open(file_path)?;
-    println!("2");
     let reader = io::BufReader::new(file);
-    println!("3");
 
     // Initialize the two lists
     let mut list1 = Vec::new();
