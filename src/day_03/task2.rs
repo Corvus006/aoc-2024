@@ -1,4 +1,3 @@
-use regex::Regex;
 use crate::day_03::read_file;
 
 pub fn task2(input: String) -> i32 {
