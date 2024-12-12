@@ -3,7 +3,7 @@ pub mod task2;
 
 
 // Function to parse a single line into target and numbers
-fn parse_line(line: &str) -> Option<(usize, Vec<usize>)> {
+pub(crate) fn parse_line(line: &str) -> Option<(usize, Vec<usize>)> {
     let parts: Vec<&str> = line.split(':').collect();
     if parts.len() != 2 {
         return None;
@@ -18,7 +18,7 @@ fn parse_line(line: &str) -> Option<(usize, Vec<usize>)> {
 }
 
 // Function to check if a target can be formed using the numbers
-fn can_form_target(numbers: &[usize], target: usize) -> bool {
+pub(crate) fn can_form_target(numbers: &[usize], target: usize) -> bool {
     // Delegate to the recursive helper function
     evaluate_possible_combinations(numbers, 0, numbers[0], target)
 }
