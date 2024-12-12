@@ -1,6 +1,6 @@
 use crate::day_03::read_file;
 
-pub fn task2(input: String) -> i32 {
+pub fn task2(input: String) -> usize {
     let code = match read_file(input) {
         Ok(val) => val,
         Err(e) => {
@@ -34,7 +34,7 @@ pub fn task2(input: String) -> i32 {
             parser.advance(1);
         }
     }
-    out
+    out as usize
 }
 
 struct Parser {

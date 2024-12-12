@@ -1,6 +1,6 @@
 use crate::day_04::read_file;
 
-pub fn task2(input: String) -> i32 {
+pub fn task2(input: String) -> usize {
     let data = match read_file(input) {
         Ok(data) => data,
         Err(error) => panic!("There was a problem reading the file: {:?}", error),
@@ -16,7 +16,7 @@ pub fn task2(input: String) -> i32 {
         }
     }
 
-    output
+    output as usize
 }
 fn check(data: &Vec<Vec<char>>, x: i32, y: i32) -> i32 {
     // Define the four diagonal patterns

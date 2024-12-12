@@ -1,6 +1,6 @@
 use crate::day_01::read_file;
 
-pub fn task1(input: String) -> i32 {
+pub fn task1(input: String) -> usize {
     let lists = match read_file(input) {
         Ok(lists) => lists,
         Err(e) => {
@@ -30,5 +30,5 @@ pub fn task1(input: String) -> i32 {
         solution += diff;
     }
 
-    solution  // Return the final sum
+    solution as usize  // Return the final sum
 }

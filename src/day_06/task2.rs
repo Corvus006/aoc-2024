@@ -40,7 +40,7 @@ pub fn detect_cycle(
     }
 }
 
-pub fn task2(file_path: String) -> i32 {
+pub fn task2(file_path: String) -> usize {
     let mut field = read_file(file_path).expect("Failed to read the file.");
     let guard_start = get_guard_position(&field);
     let guard_start_direction = get_guard_direction(&field, &guard_start);
@@ -80,7 +80,7 @@ pub fn task2(file_path: String) -> i32 {
         }
     }
 
-    valid_positions.len() as i32
+    valid_positions.len()
 }
 
 fn guard_step(

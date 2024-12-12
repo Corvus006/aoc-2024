@@ -1,6 +1,6 @@
 use crate::day_02::read_file;
 
-pub fn task2(input: String) -> i32 {
+pub fn task2(input: String) -> usize {
     // Read the file and handle errors
     let reports: Vec<Vec<i32>> = match read_file(&input) {
         Ok(data) => data,

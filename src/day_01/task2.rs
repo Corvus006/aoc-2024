@@ -1,6 +1,6 @@
 use crate::day_01::read_file;
 
-pub fn task2(input: String) -> i32 {
+pub fn task2(input: String) -> usize {
     let lists = match read_file(input) {
         Ok(lists) => lists,
         Err(e) => {
@@ -24,5 +24,5 @@ pub fn task2(input: String) -> i32 {
         solution += similarity[i];
     }
 
-    solution
+    solution as usize
 }
