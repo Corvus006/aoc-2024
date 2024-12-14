@@ -1,5 +1,4 @@
 use std::collections::HashMap;
-use std::fs;
 use crate::day_08::{ populate_node_map, print_map, process_nodes_1, read_file, Node};
 
 pub fn task1(input: String) -> usize {

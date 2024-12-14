@@ -1,4 +1,4 @@
-use std::collections::{HashSet, HashMap};
+use std::collections::{HashSet};
 use crate::day_06::{get_guard_direction, get_guard_position, read_file, rotate_right};
 
 pub fn detect_cycle(
