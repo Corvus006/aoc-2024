@@ -61,7 +61,7 @@ fn is_unique(node: &Node, map: &Vec<Vec<char>>) -> bool {
 }
 
 fn read_file(path:String)->Vec<Vec<char>>{
-    let mut input= fs::read_to_string(path).expect("Could not read file");
+    let  input= fs::read_to_string(path).expect("Could not read file");
 
     input
         .lines()
