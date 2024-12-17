@@ -1,3 +1,9 @@
-pub fn task1(input: String) -> usize {
-    0
+use crate::day_11::{ n_times_blink_optimized, read_file};
+
+pub fn task1(path: String) -> usize {
+    let input = read_file(&path);
+
+    let mut new_values = input;
+     n_times_blink_optimized(new_values,25)
+
 }
