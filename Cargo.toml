@@ -7,3 +7,4 @@ edition = "2021"
 regex = "1.11.1"
 indoc = "2.0.5"
 itertools = "0.13.0"
+

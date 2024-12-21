@@ -1,3 +1,5 @@
-pub fn task1(input: String) -> usize {
-    0
+use crate::day_16::{ part1};
+
+pub fn task1(path: String) -> usize {
+    part1(path)
 }

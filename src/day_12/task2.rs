@@ -1,4 +1,4 @@
-use crate::day_12::{calculate_total_cost2, read_file, voronoi_tesselation, Map, Region};
+use crate::day_12::{calculate_total_cost2, read_file, voronoi_tesselation, Map};
 
 pub fn task2(path: String) -> usize {
     let input = read_file(path).expect("Error reading file");
